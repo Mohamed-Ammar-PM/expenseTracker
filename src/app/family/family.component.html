@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Add Family Members</h2>
+    <!-- <form (ngSubmit)="addFamily()"> -->
+        <div class="form-group">
+            <label>Enter Family members names:</label><br>
+            <small>(Each name should be on its own line)</small><br><br>
+            <textarea [(ngModel)]="familyNames" rows="5" cols="25">
+
+            </textarea>
+        </div>
+        <!-- {{familylist}} -->
+        
+    
+    <div class="add-expense">
+            <button type="submit"  (click)="addFamily()"class="btn">Add Family</button>
+        </div>
+    <!-- </form> -->
+</div>
