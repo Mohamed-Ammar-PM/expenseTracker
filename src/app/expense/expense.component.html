@@ -54,7 +54,7 @@
         <td>{{ expense.name }}</td>
         <td>{{ expense.date | date }}</td>
         <td>{{ expense.category }}</td>
-        <td>{{ expense.amount | currency }}</td>
+        <td>{{ expense.amount | currency: 'INR' }}</td>
         <td><button class="updateButton" (click)="updateExpense(expense.id)">Update</button> <button
                 class="deleteButton" (click)="deleteExpense(expense.id)">Delete</button></td>
     </tr>
